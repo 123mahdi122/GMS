@@ -33,4 +33,6 @@ BS Information Technology Graduate
 
 ## Download
 
-Download the installer from the Releases section.
+The installer is not included in this repository because the compiled installer file is over 200 MB in size and exceeds the standard GitHub file upload limit.
+
+For the installer, please contact the developer.
