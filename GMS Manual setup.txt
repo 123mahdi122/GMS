@@ -1,0 +1,105 @@
+
+  GUIDANCE MANAGEMENT SYSTEM
+  USER INSTALLATION GUIDE
+  Developer: MAHDI
+  Built with: Java JDK 23, Netbeans IDE 23, XAMPP, Launch4J, Inno Setup
+  Version: 1.0
+  Date: August 2026
+
+
+WELCOME!
+This guide will help you install and run the Guidance Management System.
+
+SYSTEM REQUIREMENTS
+
+1. Windows 10 / 11 64-bit
+2. At least 4GB RAM
+3. 500MB Free Disk Space
+
+STEP 1: INSTALL THE SYSTEM
+
+1. Double-click the installer file:
+   GuidanceManagementSystem_Setup.exe
+2. Click "Next" > "I Agree" > "Next"
+3. Choose installation folder. Default: C:\Program Files (x86)\GuidanceManagementSystem
+4. Click "Install"
+5. Wait until "Installation Complete" then click "Finish"
+   *The system will NOT run yet. We need to install XAMPP first.
+
+STEP 2: INSTALL XAMPP
+
+1. The installer will open XAMPP Setup automatically.
+   If not, go to folder: C:\Program Files\GuidanceManagementSystem\SetupFiles\
+   and run: xampp-windows-x64.exe
+2. Install XAMPP using default settings.
+3. After install, open "XAMPP Control Panel"
+4. Click "Start" on Apache
+5. Click "Start" on MySQL
+   *Both Apache and MySQL must be GREEN
+
+STEP 3: CREATE DATABASE AND IMPORT.SQL FILE
+
+1. Open your browser and go to: http://localhost/phpmyadmin
+2. Click "Databases" tab
+3. Create New Database:
+   Database Name: counselling
+   Click "Create"
+4. Click the "counselling" database on the left side
+5. Click "Import" tab
+6. Click "Choose File" and select:
+   counselling.sql
+   *Location: C:\Program Files (x86)\GuidanceManagementSystem\Database\counselling.sql
+7. Click "Go" at the bottom.
+   Wait for "Import has been successfully finished" message
+
+STEP 4: LAUNCH THE GUIDANCE MANAGEMENT SYSTEM
+
+1. Go to Desktop or Start Menu
+2. Double-click: "Guidance Management System"
+   *This is the.exe file made by Launch4J
+3. Wait for the system to load
+
+STEP 5: LOGIN TO THE SYSTEM
+
+Option A: If you already have an account
+1. Enter your Username
+2. Enter your Password
+3. Click "Login"
+
+Option B: If you DON'T have credentials yet
+1. Click "Register" button on the login screen
+2. Fill up the registration form
+3. Click "Submit / Register"
+4. Login using your new credentials
+
+IMPORTANT NOTES
+
+1. ALWAYS start XAMPP first before opening the system.
+   Apache = ON, MySQL = ON
+2. Do not delete or rename the "counselling" database
+3. Default Admin Account if needed:
+   Username: root
+   Password: 
+   *Change this after first login for security
+
+TROUBLESHOOTING
+
+Problem: "Cannot connect to database"
+Solution:
+1. Check if Apache and MySQL are running in XAMPP
+2. Check if "counselling" database is imported
+
+Problem: "Port 80 in use / Apache won't start"
+Solution:
+In XAMPP > Config > Service and Port Settings > Change Apache Main Port to 8080
+
+Problem: "System won't open"
+Solution:
+1. Make sure JDK 23 is installed
+2. Right click the.exe > Run as Administrator
+
+FOR SUPPORT
+Contact: MAHDI
+
+  END OF GUIDE
+
