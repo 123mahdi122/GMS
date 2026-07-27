@@ -7,8 +7,8 @@ A desktop-based Guidance Management System developed using Java Swing and MySQL.
 - User Login
 - User Registration
 - Student Profiling
+- Counselor Profiling
 - Counseling Management
-- Concern Management
 - Case Management
 - CRUD Operations
 - MySQL Database
